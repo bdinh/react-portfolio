@@ -1,28 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+#root {
+    height: 100%;
+}
+
 .App {
-  text-align: center;
+    height: 100%;
+    font-family: Raleway, "Open Sans", sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.landing-strip {
+    /*height: 50vh;*/
+    background-color: #34495E;
+    color: #FFFFFF;
+    padding: 2em 2em 1em 2em;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.landing-header {
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
-.App-title {
-  font-size: 1.5em;
+.landing-subheader {
+    margin-bottom: 4em;
 }
 
-.App-intro {
-  font-size: large;
+.page-scroll {
+    text-align: center;
+}
+.page-scroll-text {
+    color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+
+
+
+
+
+
+@media (min-width: 598px) {
+
 }
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
