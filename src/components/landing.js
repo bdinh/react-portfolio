@@ -14,7 +14,7 @@ export default class Landing extends Component {
             <div className="landing-strip">
                 <p className="landing-header">{headerText}</p>
                 <p className="landing-subheader">
-            gi        {subheaderText}
+                    {subheaderText}
                 </p>
                 <div className="page-scroll">
                     <a className="page-scroll-text" href="#">
