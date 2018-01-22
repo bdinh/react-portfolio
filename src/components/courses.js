@@ -20,7 +20,6 @@ export default class Courses extends Component {
         return (
             <div className="container">
                 <div className="row skills-section">
-                    <div className="row skills-section">
                         <div className="col-12 skill-title">
                             <h3>Relevant Courses</h3>
                         </div>
@@ -30,7 +29,6 @@ export default class Courses extends Component {
                         <CourseColumn
                             coursesArray={courses}
                         />
-                </div>
                 </div>
             </div>
 

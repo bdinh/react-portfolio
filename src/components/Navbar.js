@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './../include/bootstrap';
 
+
 export default class Navbar extends Component {
     constructor(props) {
         super(props)
