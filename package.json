@@ -1,10 +1,12 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://bdinh.github.io/react-portfolio/",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^1.1.0",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.9",
     "react": "^16.2.0",
@@ -16,6 +18,8 @@
     "tether": "^1.4.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

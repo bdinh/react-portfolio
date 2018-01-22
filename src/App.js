@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import AboutView from './views/AboutView';
+import WorkView from './views/WorkView';
 import { Switch, Route } from 'react-router-dom'
 import { Document } from 'react-pdf';
 
 
 class App extends Component {
     render() {
+
+        console.log("hello");
+
         return (
             <div className="App">
                 <Switch>
@@ -325,6 +329,29 @@ class App extends Component {
                             }}
                         />
                         )
+                    }/>
+                    <Route
+                        path="/work" render={(routerProps) => (
+                        <WorkView
+                            navbar={{
+                                navbarBrand: "@baohdinh",
+                                navbarLinks: [
+                                    {
+                                        name: "About",
+                                        link: "/"
+                                    },
+                                    {
+                                        name: "Work",
+                                        link: "/work"
+                                    },
+                                    {
+                                        name: "Photography",
+                                        link: "/photo"
+                                    },
+                                ]
+                            }}
+                        />
+                    )
                     }/>
                 </Switch>
             </div>
