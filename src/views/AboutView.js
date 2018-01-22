@@ -65,6 +65,8 @@ export default class AboutView extends Component {
                 qualifications ?
                     (
                         <Qualifications
+                            skillHeader={qualifications.skillHeader}
+                            skillSubheader={qualifications.skillSubheader}
                             skillSet={qualifications.skillSet}
                             courses={qualifications.courses}
                         />

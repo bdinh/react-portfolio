@@ -9,6 +9,8 @@ export default class Qualifications extends Component {
     render() {
 
         const {
+            skillHeader,
+            skillSubheader,
             skillSet,
             courses
         } = this.props;
@@ -16,11 +18,19 @@ export default class Qualifications extends Component {
         return (
             <div className="qualifications">
                 <Skills
+                    skillHeader={skillHeader}
+                    skillSubheader={skillSubheader}
                     skillSet={skillSet}
                 />
-                <Courses
-                    courses={courses}
-                />
+                {
+                    courses ?
+                        (
+                            <Courses
+                                courses={courses}
+                            />
+                        )
+                    : ""
+                }
             </div>
         )
     }

@@ -5,6 +5,8 @@ import ProgressBar from './progressBar';
 export default class Skills extends Component {
     render() {
         const {
+            skillHeader,
+            skillSubheader,
             skillSet,
         } = this.props;
 
@@ -18,12 +20,12 @@ export default class Skills extends Component {
                 <div className="row skills-section">
                     <div className="col-md-6 col-12 skills-content"/>
                     <div className="col-md-6 col-12 skills-content">
-                        <h2>What Can I do?</h2>
+                        <h2>{skillHeader}</h2>
                     </div>
                 </div>
                 <div className="row skills-section">
-                    <div className="col-12 skill-title">
-                        <h3>Technical Skill Set</h3>
+                    <div className="col-12 skill-title skills-content">
+                        <h3>{skillSubheader}</h3>
                     </div>
                     <SkillColumn
                         skillsArray={splitSkillSet}

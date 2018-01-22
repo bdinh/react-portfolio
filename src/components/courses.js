@@ -46,9 +46,12 @@ class Course extends Component {
         } = this.props;
 
         return (
-            <div className="course">
-                {course.name}
-            </div>
+            <a className="course-link" href={course.link}>
+                <div className="course">
+                        {course.name}
+                </div>
+            </a>
+
         )
     }
 }

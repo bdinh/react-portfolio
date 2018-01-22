@@ -17,7 +17,7 @@ export default class Landing extends Component {
                     {subheaderText}
                 </p>
                 <div className="page-scroll">
-                    <a className="page-scroll-text" href="#">
+                    <a className="page-scroll-text" href="#about">
                         {pageScrollText ? pageScrollText : "Learn More"}
                         <br/>
                         <FontAwesome

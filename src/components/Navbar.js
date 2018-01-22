@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom'
 import './../include/bootstrap';
 
 
@@ -16,7 +17,7 @@ export default class Navbar extends Component {
 
         return (
             <nav className="navbar navbar-expand-md fixed-top navbar-dark">
-                <a className="navbar-brand" href="#home">{navbarBrand}</a>
+                <NavLink className="navbar-brand" to="/">{navbarBrand}</NavLink>
                 <button className="navbar-toggler navbar-toggler-right"
                         type="button"
                         data-toggle="collapse"
@@ -28,18 +29,19 @@ export default class Navbar extends Component {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item "><a className="nav-link" href={navbarLinks[0].link}>{navbarLinks[0].name} <span className="sr-only">(current)</span></a></li>
+                        <li className="nav-item "><NavLink className="nav-link" to={navbarLinks[0].link}>{navbarLinks[0].name} <span className="sr-only">(current)</span></NavLink></li>
                         {
                             navbarLinks.splice(1, navbarLinks.length - 1).map((link, i) => {
                                 return (
                                     <li className="nav-item" key={i}>
-                                        <a className="nav-link" href={link.link}>
+                                        <NavLink className="nav-link" to={link.link}>
                                             {link.name}
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 )
                             })
                         }
+                        <li className="nav-item "><a className="nav-link" href="./files/resume.pdf">Resume <span className="sr-only">(current)</span></a></li>
                     </ul>
                 </div>
             </nav>

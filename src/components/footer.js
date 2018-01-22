@@ -15,8 +15,6 @@ export default class Footer extends Component {
             socialAccounts
         } = this.props;
 
-        console.log(copyrightText);
-
         // Get the count of social media icons in order to create a grid based on entries
 
         return (
