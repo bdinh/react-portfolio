@@ -12,7 +12,7 @@ export default class Footer extends Component {
 
         const {
             copyrightText,
-            socialAccounts
+            socialAccounts,
         } = this.props;
 
         // Get the count of social media icons in order to create a grid based on entries

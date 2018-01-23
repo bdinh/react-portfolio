@@ -332,7 +332,7 @@ class App extends Component {
                     }/>
                     <Route
                         path="/work" render={(routerProps) => (
-                        <WorkView
+                            <WorkView
                             navbar={{
                                 navbarBrand: "@baohdinh",
                                 navbarLinks: [
@@ -350,8 +350,28 @@ class App extends Component {
                                     },
                                 ]
                             }}
+                            footer={{
+                                socialAccounts: [
+                                    {
+                                        name: "facebook",
+                                        link: "https://www.facebook.com/baodinh96",
+                                    },
+                                    {
+                                        name: "instagram",
+                                        link: "https://www.instagram.com/baohdinh/",
+                                    },
+                                    {
+                                        name: "github",
+                                        link: "https://github.com/bdinh",
+                                    },
+                                    {
+                                        name: "linkedin",
+                                        link: "https://www.linkedin.com/in/baohdinh/",
+                                    }
+                                ],
+                            }}
                         />
-                    )
+                        )
                     }/>
                 </Switch>
             </div>

@@ -6,6 +6,7 @@ import Qualifications from '../components/qualifications';
 import Footer from '../components/footer';
 
 
+
 export default class AboutView extends Component {
     render() {
 

@@ -283,7 +283,7 @@ a:hover, a:active {
     justify-items: center;
 }
 
-.navbar-format {
+.navbar-spacing {
     height: 72px;
 }
 
@@ -307,7 +307,7 @@ a:hover, a:active {
 }
 
 
-.work-view {
+.experience-section {
     background-color: #EDEEF0!important;
 }
 
@@ -359,7 +359,7 @@ a:hover, a:active {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.content:hover .content-details{
+.content:hover .content-details, .content:hover .experience-content-details {
     top: 50%;
     left: 50%;
     opacity: 1;
@@ -367,7 +367,7 @@ a:hover, a:active {
 }
 
 
-.content-details {
+.content-details, .experience-content-details {
     color: #fff;
     font-size: 1em;
 }
@@ -404,6 +404,35 @@ a:hover, a:active {
 
 .remove-link-css {
     color: #FFFFFF;
+}
+
+.experience-content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.experience-content-details {
+    font-size: 1.25em;
+}
+
+.experience-content-title {
+    font-size: 1.5em;
+}
+
+.experience-content-text p {
+    font-style: italic;
 }
 
 
@@ -475,6 +504,10 @@ a:hover, a:active {
         font-size: 0.75em;
     }
 
+    .experience-content-title {
+        font-size: 1.5em;
+    }
+
     .content-date {
         font-size: 1em;
     }
@@ -488,6 +521,21 @@ a:hover, a:active {
         left: 50%;
         opacity: 1;
         padding-top: 1em;
+    }
+
+    .experience-content-details {
+        font-size: 0.75em;
+    }
+
+    .content:hover .experience-content-details{
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        padding-top: 1em;
+    }
+
+    .content-text {
+        font-size: 0.75em;
     }
 
 }
@@ -531,6 +579,22 @@ a:hover, a:active {
         padding-top: 1em;
     }
 
+    .experience-content-details {
+        font-size: 1em;
+    }
+
+    .content:hover .experience-content-details{
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        padding-top: 1em;
+    }
+
+    .content-text {
+        font-size: 0.75em;
+    }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -548,6 +612,10 @@ a:hover, a:active {
 
     .close {
         right: 50px;
+    }
+
+    .experience-content-details {
+        font-size: 1.25em;
     }
 }
 
