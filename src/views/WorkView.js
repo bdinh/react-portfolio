@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/footer';
+import Landing from '../components/landing';
 
 export default class WorkView extends Component {
 
@@ -30,6 +31,10 @@ export default class WorkView extends Component {
                             ""
                         )
                 }
+                <Landing
+                        headerText="Software Developer"
+                        subheaderText={"Whether it's in my code or my photos, attention to detail is what I always strive for"}
+                />
                 <div className="experience-section">
                     <div className="container">
                     <div className="navbar-spacing">
@@ -172,10 +177,10 @@ export default class WorkView extends Component {
                                             <a  className="remove-link-css" href="https://slack.com/"> Slack.</a>
                                         </p>
                                         <a className="remove-link-css"
-                                           href="https://github.com/bdinh/tweetalytics">Source Code</a>
+                                           href="https://github.com/bdinh/slack-application">Source Code</a>
                                         <br/>
                                         <a className="remove-link-css"
-                                           href="https://bdinh.github.io/tweetalytics/">Live Site</a>
+                                           href="https://bdinh.github.io/slack-application/login">Live Site</a>
                                     </div>
                                 </div>
                             </div>
@@ -202,13 +207,13 @@ export default class WorkView extends Component {
                                 <div className="content-overlay"/>
                                 <img className="card-img-top content-image" src="./images/c-logo.png" alt="Card image cap"/>
                                 <div className="experience-content-details fadeIn-bottom">
-                                    <p className="experience-content-title">Reinforcement Learning</p>
+                                    <p className="experience-content-title">C Memory Manager</p>
                                     <div className="content-text experience-content-text">
-                                        <p>Python scripts that attempts to formulate and solve a 2x2 rubik's cube using
-                                            reinforcement learning.
+                                        <p>Memory management package that has the same
+                                            functionality as the standard library malloc and free functions.
                                         </p>
                                         <a className="remove-link-css"
-                                           href="https://github.com/bdinh/rubiks-cube">Source Code</a>
+                                           href="https://github.com/bdinh/memory-management">Source Code</a>
                                         <br/>
                                     </div>
                                 </div>

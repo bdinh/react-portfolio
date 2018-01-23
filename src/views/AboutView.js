@@ -33,6 +33,8 @@ export default class AboutView extends Component {
                         ""
                     )
             }
+                <div className="navbar-spacing">
+                </div>
             {
                 landing ?
                     (
