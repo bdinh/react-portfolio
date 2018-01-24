@@ -3,6 +3,9 @@ import './App.css';
 import AboutView from './views/AboutView';
 import WorkView from './views/WorkView';
 import { Switch, Route } from 'react-router-dom'
+import './include/bootstrap';
+
+
 
 class App extends Component {
     render() {
@@ -44,6 +47,7 @@ class App extends Component {
                                         link: "https://www.linkedin.com/in/baohdinh/",
                                     }
                                 ],
+                                copyrightText: "Made with <span class='heart'> &hearts; </span> by Bao"
                             }}
                         />
                     )

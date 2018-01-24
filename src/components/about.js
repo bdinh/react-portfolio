@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ProfileImage from './profileImage';
-import ProfileText from './profileText';
+import '../css/about.css';
 
 export default class About extends Component {
     render() {
@@ -41,4 +40,53 @@ export default class About extends Component {
             </div>
         );
     }
+}
+
+
+class ProfileText extends Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+
+        const {
+            aboutHeader,
+            aboutText,
+        } = this.props;
+
+        return (
+            <div className="col-md-6 col-lg-8 profile-content">
+                <h2>{aboutHeader}</h2>
+                <div className="profile-text">
+                    <p>{aboutText}</p>
+                </div>
+            </div>
+        )
+    }
+
+}
+
+
+class ProfileImage extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        const {
+            profileImagePath
+        } = this.props;
+
+        return (
+            <div className="col-md-6 col-lg-4 about-content profile-picture-container">
+                <img
+                    className="profile-picture"
+                    alt="User Profile Picture"
+                    src={profileImagePath}
+                />
+            </div>
+        )
+    }
+
 }

@@ -4,16 +4,14 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/footer';
 import Landing from '../components/landing';
 
+// TODO: Refactor Code and add prop constraints
+
 export default class WorkView extends Component {
 
     render() {
 
         const {
             navbar,
-            landing,
-            about,
-            qualifications,
-            footer
         } = this.props;
 
         return (
@@ -43,64 +41,36 @@ export default class WorkView extends Component {
                         <h2>Experience</h2>
                     </div>
                     <div className="experience-container row">
-                        <div className="col-md-6 experience-item">
-                            <div className="card content">
-                                <div className="content-overlay"/>
-                                <img className="card-img-top content-image" src="./images/ihme.png" alt="Card image cap"/>
-                                <div className="content-details experience-detail fadeIn-bottom">
-                                    <div className="row">
-                                        <div className="col-6">
-                                            <p className="content-title">SDE Intern</p>
-                                        </div>
-                                        <div className="col-6">
-                                            <p className="content-date">June - August 2017</p>
-                                        </div>
-                                    </div>
-                                    <a className="remove-link-css"
-                                       href="http://www.healthdata.org/">Institute for Health Metrics and Evaluation</a>
-                                    <div className="content-text">
-                                        <ul>
-                                            <li>
-                                                Designed and implemented reusable React components used for the refactoring of visualization codebase.
-                                            </li>
-                                            <li>
-                                                Worked in a Scrum framework in order to complete objectives to carryout deliverables.                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 experience-item">
-                            <div className="card content">
-                                <div className="content-overlay"/>
-                                <img className="card-img-top content-image" src="./images/ischool-linear-gradient.png" alt="Card image cap"/>
-                                <div className="content-details fadeIn-bottom">
-                                    <div className="row">
-                                        <div className="col-6">
-                                            <p className="content-title">Teaching Assistant</p>
-                                        </div>
-                                        <div className="col-6">
-                                            <p className="content-date">March 2017 - Present</p>
-                                        </div>
-                                    </div>
-                                    <a className="remove-link-css"
-                                       href="https://ischool.uw.edu/">University of Washington Information School</a>
-                                    <div className="content-text">
-                                        <ul>
-                                            <li>
-                                                Teach undergraduate students technologies
-                                                (R, CLI, Git, APIs) that serves as a technical
-                                                foundation for them to build upon as they continue to
-                                                develop more technical skills.</li>
-                                            <li>
-                                                Responsibilities include, writing programming exercises,
-                                                creating lab presentations, and performing programming demos.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Experience
+                            title="SDE Intern"
+                            date="June - August 2017"
+                            organization={{
+                                name: "Institute for Health Metrics and Evaluation",
+                                link: "http://www.healthdata.org/",
+                                source: "./images/ihme.png"
+                            }}
+                            bullet={[
+                                "Designed and implemented reusable React components used for the refactoring of visualization codebase.",
+                                "Worked in a Scrum framework in order to complete objectives to carryout deliverables."
+                            ]}
+                        />
+                        <Experience
+                            title="Teaching Assistant"
+                            date="March 2017 - Present"
+                            organization={{
+                                name: "University of Washington Information School",
+                                link: "https://ischool.uw.edu/",
+                                source: "./images/ischool-linear-gradient.png"
+                            }}
+                            bullet={[
+                                "Teach undergraduate students technologies\n" +
+                                "(R, CLI, Git, APIs) that serves as a technical\n" +
+                                "oundation for them to build upon as they continue to\n" +
+                                "develop more technical skills.",
+                                "Responsibilities include, writing programming exercises,\n" +
+                                "creating lab presentations, and performing programming demos."
+                            ]}
+                        />
                     </div>
                     <div className="navbar-spacing"/>
                 </div>
@@ -111,120 +81,60 @@ export default class WorkView extends Component {
                         <h2>Projects</h2>
                     </div>
                     <div className="experience-container row">
-                        <div className="col-md-4 project-item">
-                            <div className="card content">
-                                <div className="content-overlay"/>
-                                <img className="card-img-top content-image" src="./images/react-build-portfolio.png" alt="Card image cap"/>
-                                <div className="experience-content-details fadeIn-bottom">
-                                    <p className="experience-content-title">react-build-portfolio</p>
-                                    <div className="content-text experience-content-text">
-                                        <p>Stateless React Components library for building portfolios.</p>
-                                        <a className="remove-link-css"
-                                        href="https://github.com/bdinh/react-build-portfolio">Source Code</a>
-                                        <p>*Work currently in progress</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 project-item">
-                            <div className="card content">
-                                <div className="content-overlay"/>
-                                <img className="card-img-top content-image" src="./images/tic-tac-toe.png" alt="Card image cap"/>
-                                <div className="experience-content-details fadeIn-bottom">
-                                    <p className="experience-content-title">Tic-Tac-Toe</p>
-                                    <div className="content-text experience-content-text">
-                                        <p>A simple interactive game of Tic-Tac-Toe,
-                                            supplemented with a brief explanation to game-theory.
-                                        </p>
-                                        <a className="remove-link-css"
-                                           href="https://github.com/bdinh/tic-tac-toe">Source Code</a>
-                                        <br/>
-                                        <a className="remove-link-css"
-                                           href="https://bdinh.github.io/tic-tac-toe/about.html">Live Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 project-item">
-                            <div className="card content">
-                                <div className="content-overlay"/>
-                                <img className="card-img-top content-image" src="./images/tweetalytics.png" alt="Card image cap"/>
-                                <div className="experience-content-details fadeIn-bottom">
-                                    <p className="experience-content-title">Tweetalytics</p>
-                                    <div className="content-text experience-content-text">
-                                        <p>Interactive web application that that utilizes
-                                            <a className="remove-link-css" href="https://developer.twitter.com/en/docs/tweets/post-and-engage/overview"> Twitter's Rest API </a>
-                                            to create a visualization dashboard showing relevant tweet engagement statistics.
-                                        </p>
-                                        <a className="remove-link-css"
-                                           href="https://github.com/bdinh/tweetalytics">Source Code</a>
-                                        <br/>
-                                        <a className="remove-link-css"
-                                           href="https://bdinh.github.io/tweetalytics/">Live Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 project-item">
-                            <div className="card content">
-                                <div className="content-overlay"/>
-                                <img className="card-img-top content-image" src="./images/slack-application.png" alt="Card image cap"/>
-                                <div className="experience-content-details fadeIn-bottom">
-                                    <p className="experience-content-title">Slack Rebuilt</p>
-                                    <div className="content-text experience-content-text">
-                                        <p>React application that utilizes routers and Firebase to
-                                            create a single-page messaging application that resembles that of
-                                            <a  className="remove-link-css" href="https://slack.com/"> Slack.</a>
-                                        </p>
-                                        <a className="remove-link-css"
-                                           href="https://github.com/bdinh/slack-application">Source Code</a>
-                                        <br/>
-                                        <a className="remove-link-css"
-                                           href="https://bdinh.github.io/slack-application/login">Live Site</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 project-item">
-                            <div className="card content">
-                                <div className="content-overlay"/>
-                                <img className="card-img-top content-image" src="./images/rubiks-cube.jpg" alt="Card image cap"/>
-                                <div className="experience-content-details fadeIn-bottom">
-                                    <p className="experience-content-title">Reinforcement Learning</p>
-                                    <div className="content-text experience-content-text">
-                                        <p>Python scripts that attempts to formulate and solve a 2x2 rubik's cube using
-                                            reinforcement learning.
-                                        </p>
-                                        <a className="remove-link-css"
-                                           href="https://github.com/bdinh/rubiks-cube">Source Code</a>
-                                        <br/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4 project-item">
-                            <div className="card content">
-                                <div className="content-overlay"/>
-                                <img className="card-img-top content-image" src="./images/c-logo.png" alt="Card image cap"/>
-                                <div className="experience-content-details fadeIn-bottom">
-                                    <p className="experience-content-title">C Memory Manager</p>
-                                    <div className="content-text experience-content-text">
-                                        <p>Memory management package that has the same
-                                            functionality as the standard library malloc and free functions.
-                                        </p>
-                                        <a className="remove-link-css"
-                                           href="https://github.com/bdinh/memory-management">Source Code</a>
-                                        <br/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Project
+                            title="react-build-portfolio"
+                            description="Stateless React Components library for building portfolios."
+                            image="/images/react-build-portfolio.png"
+                            sourceCode="https://github.com/bdinh/react-build-portfolio"
+                            unfinished
+                        />
+                        <Project
+                            title="Tic-Tac-Toe"
+                            description="A simple interactive game of Tic-Tac-Toe,
+                            supplemented with a brief explanation to game-theory."
+                            image="./images/tic-tac-toe.png"
+                            sourceCode="https://github.com/bdinh/tic-tac-toe"
+                            liveSite="https://bdinh.github.io/tic-tac-toe/about.html"
+                        />
+                        <Project
+                            title="Tweetalytics"
+                            description={"Interactive web application that that utilizes\n" +
+                            "Twitter's Rest API " +
+                            "to create a visualization dashboard showing relevant tweet engagement statistics."}
+                            image="./images/tweetalytics.png"
+                            sourceCode="https://github.com/bdinh/tweetalytics"
+                            liveSite="https://bdinh.github.io/tweetalytics/"
+                        />
+                        <Project
+                            title="Slack Rebuilt"
+                            description="React application that utilizes routers and Firebase to
+                            create a single-page messaging application that resembles that of Slack"
+                            image="./images/slack-application.png"
+                            sourceCode="https://github.com/bdinh/slack-application"
+                            liveSite="https://bdinh.github.io/slack-application/login"
+                        />
+                        <Project
+                            title="Reinforcement Learning"
+                            description="Python scripts that attempts to formulate and solve a 2x2 rubik's cube using
+                            reinforcement learning."
+                            image="./images/rubiks-cube.jpg"
+                            sourceCode="https://github.com/bdinh/rubiks-cube"
+                        />
+                        <Project
+                            title="C Memory Manager"
+                            description="Memory management package that has the same
+                            functionality as the standard library malloc and free functions."
+                            image="./images/c-logo.png"
+                            sourceCode="https://github.com/bdinh/memory-management"
+                        />
                     </div>
                 </div>
                 <div className="navbar-spacing"/>
                 <div style={{backgroundColor: "#EDEEF0"}}>
                 <Footer
                     socialAccounts={footer.socialAccounts}
+                    copyrightText={footer.copyrightText}
+
                 />
                 </div>
             </div>
@@ -233,4 +143,104 @@ export default class WorkView extends Component {
 
     }
 
+}
+
+
+class Experience extends Component {
+
+    render() {
+
+        const {
+            title,
+            date,
+            organization,
+            bullet,
+        } = this.props;
+
+        return (
+            <div className="col-md-6 experience-item">
+                <div className="card content">
+                    <div className="content-overlay"/>
+                    <img className="card-img-top content-image" src={organization.source} alt="Card image cap"/>
+                    <div className="content-details experience-detail fadeIn-bottom">
+                        <div className="row">
+                            <div className="col-6">
+                                <p className="content-title">{title}</p>
+                            </div>
+                            <div className="col-6">
+                                <p className="content-date">{date}</p>
+                            </div>
+                        </div>
+                        <a className="remove-link-css"
+                           href={organization.link}>{organization.name}</a>
+                        <div className="content-text">
+                            <ul>
+                                {
+                                    bullet.map((point, i) => (
+                                        <li key={i}>{point}</li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
+
+class Project extends Component {
+
+    render() {
+
+        const {
+            title,
+            description,
+            image,
+            sourceCode,
+            liveSite,
+            unfinished,
+        } = this.props;
+
+        return (
+            <div className="col-md-4 project-item">
+                <div className="card content">
+                    <div className="content-overlay"/>
+                    <img className="card-img-top content-image" src={image} alt="Card image cap"/>
+                    <div className="experience-content-details fadeIn-bottom">
+                        <p className="experience-content-title">{title}</p>
+                        <div className="content-text experience-content-text">
+                            <p>{description}</p>
+                            <a className="remove-link-css"
+                               href={sourceCode}>Source Code</a>
+                            <br/>
+                            {
+                                unfinished ?
+                                    (
+                                        <p>*Work currently in progress</p>
+                                    )
+                                :
+                                    (
+                                        ""
+                                    )
+                            }
+                            {
+                                liveSite ?
+                                    (
+                                        <a className="remove-link-css"
+                                           href={liveSite}>
+                                            Live Site
+                                        </a>
+                                    )
+                                    :
+                                    (
+                                        ""
+                                    )
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }

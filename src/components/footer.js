@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
+import '../css/foooter.css';
 
 export default class Footer extends Component {
     constructor(props) {
@@ -15,12 +16,10 @@ export default class Footer extends Component {
             socialAccounts,
         } = this.props;
 
-        // Get the count of social media icons in order to create a grid based on entries
-
         return (
             <footer>
             <div className="container">
-                <div className="contact">
+                <div className="footer-contact">
                     {
                         socialAccounts.map((account, i) => {
                             return (
@@ -35,8 +34,7 @@ export default class Footer extends Component {
                         })
                     }
                     <p dangerouslySetInnerHTML={{
-                        __html: copyrightText ? copyrightText
-                            : "Copyright &copy; 2017 Bao"
+                        __html: copyrightText
                     }}/>
                 </div>
             </div>

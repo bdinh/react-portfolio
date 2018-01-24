@@ -1,0 +1,57 @@
+.about {
+    padding: 2em 0;
+    text-align: center;
+    height: 100%;
+}
+
+.about-icon {
+    margin: 0.5em;
+}
+
+.about-section {
+    margin: 2em 0;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+
+.profile-picture-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+@media (min-width: 598px) {
+    .about-icon {
+        width: 75%;
+        padding-top: 1em;
+        display: inline;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+
+    .profile-picture {
+        width: 90%;
+        margin-bottom: auto;
+
+    }
+}
+
+
+@media (min-width: 992px) {
+    .profile-text {
+        width: 75%;
+        margin: auto;
+        padding-top: 0.5em;
+    }
+
+}

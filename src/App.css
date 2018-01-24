@@ -10,24 +10,6 @@
 }
 
 
-.landing-strip {
-    color: #ffffff;
-    background-color: #34495E;
-    height: 100%;
-    padding: 2em 2em 1em 2em;
-}
-
-.landing-header {
-    padding-top: 2em;
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
-.page-scroll-text {
-    color: #FFFFFF;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -60,64 +42,12 @@ body {
 }
 
 
-.page-scroll {
-    margin-top: 5em;
-    /*margin-bottom: 1em;*/
-    text-align: center;
-}
-
-.profile-picture {
-    border-radius: 50%;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 2em;
-}
-
-.about, .qualifications, footer {
+footer {
     padding: 2em 0;
     text-align: center;
     height: 100%;
 }
 
-.about-section, .skills-section {
-    margin: 2em 0;
-}
-
-.qualifications {
-    background-color: #EDEEF0;
-    width: 100%;
-}
-
-.about-icon {
-    margin: 0.5em;
-}
-
-.full-bar {
-    height: 1em;
-    width: 100%;
-    background-color: #99A4AE;
-    margin-top: 0.25em;
-    margin-bottom: 1.5em;
-}
-
-.progress-bar {
-    background-color: #34495E;
-}
-
-.course-link {
-    color: #000000;
-}
-
-a.course-link:hover {
-    color: #000!important;
-}
-
-.course-link > div {
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-    overflow: hidden;
-    line-height: 1em;
-}
 
 h3 {
     margin-bottom: 2em;
@@ -129,38 +59,6 @@ a:hover, a:active {
     color: #c0dfd9!important;
 }
 
-.course {
-    margin-top: 0.25em;
-    margin-bottom: 1.5em;
-    border: solid #34495E 3px;
-    height: 4.5em;
-    padding: 1em;
-}
-
-.skill-title {
-    padding-bottom: 1em;
-}
-
-
-.contact {
-    font-size: 1.5em;
-}
-
-.social-link a {
-    font-size: 1em;
-    color: #ffffff;
-    margin-top: 0.25em;
-    display: inline-block;
-}
-
-.social-link {
-    display: inline-block;
-    background-color: #34495E;
-    height: 2em;
-    width: 2em;
-    border-radius: 50%;
-    margin: 1em;
-}
 
 .project-landing {
     height: 100%;
@@ -277,11 +175,6 @@ a:hover, a:active {
     font-weight: normal;
 }
 
-.profile-picture-container {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
 
 .navbar-spacing {
     height: 72px;
@@ -438,54 +331,12 @@ a:hover, a:active {
 
 
 @media (min-width: 598px) {
-    .about-icon {
-        width: 75%;
-        padding-top: 1em;
-        display: inline;
-    }
 
-    .second-skills, .second-course {
-        margin-top: 0;
-    }
-
-    .social-link a {
-        font-size: 1.5em;
-        margin-top: 0.1em;
-    }
-
-    .social-link {
-        height: 2.5em;
-        width: 2.5em;
-    }
 }
 
 @media (min-width: 768px) {
     .hero-context > h1 {
         font-size: 48px;
-    }
-
-    .second-skills {
-        margin-top: 5em;
-    }
-
-    .profile-picture {
-        width: 90%;
-    }
-
-    .second-course {
-        margin-top: 5em;
-    }
-
-    .course {
-        height: 4.5em;
-    }
-
-    .full-bar {
-        width: 100%;
-    }
-
-    .course {
-        height: 4em;
     }
 
     .modal-content {
@@ -494,10 +345,6 @@ a:hover, a:active {
 
     .close {
         right: 35px;
-    }
-
-    .profile-picture {
-        margin-bottom: auto;
     }
 
     .content-details {
@@ -542,16 +389,6 @@ a:hover, a:active {
 
 
 @media (min-width: 992px) {
-    .about-text {
-        width: 75%;
-        margin: auto;
-        padding-top: 0.5em;
-    }
-
-    .course {
-        height: 4em;
-    }
-
     .modal-content {
         width: 70%;
     }
@@ -593,8 +430,6 @@ a:hover, a:active {
     .content-text {
         font-size: 0.75em;
     }
-
-
 }
 
 @media (min-width: 1200px) {

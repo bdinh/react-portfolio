@@ -1,0 +1,50 @@
+.footer-contact {
+    font-size: 1.5em;
+}
+
+.social-link a {
+    font-size: 1em;
+    color: #ffffff;
+    margin-top: 0.25em;
+    display: inline-block;
+}
+
+.social-link {
+    display: inline-block;
+    background-color: #34495E;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.heart {
+    color: #c0dfd9;
+}
+
+
+@media (min-width: 598px) {
+    .social-link a {
+        font-size: 1.5em;
+        margin-top: 0.1em;
+    }
+
+    .social-link {
+        height: 2.5em;
+        width: 2.5em;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+

@@ -1,0 +1,69 @@
+.qualifications {
+    padding: 2em 0;
+    text-align: center;
+    height: 100%;
+    background-color: #EDEEF0;
+    width: 100%;
+}
+
+.skills-section {
+    margin: 2em 0;
+}
+
+.full-bar {
+    height: 1em;
+    width: 100%;
+    background-color: #99A4AE;
+    margin-top: 0.25em;
+    margin-bottom: 1.5em;
+}
+
+.progress-bar {
+    background-color: #34495E;
+}
+
+
+.skill-title {
+    padding-bottom: 1em;
+}
+
+.course-link {
+    color: #000000;
+}
+
+.course-link > div {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+    line-height: 1em;
+}
+
+.course {
+    margin-top: 0.25em;
+    margin-bottom: 1.5em;
+    border: solid #34495E 3px;
+    height: 4.5em;
+    padding: 1em;
+}
+
+
+@media (min-width: 768px) {
+    .full-bar {
+        width: 100%;
+    }
+
+    .course {
+        height: 4em;
+    }
+}
+
+@media (min-width: 992px) {
+    .course {
+        height: 4em;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+

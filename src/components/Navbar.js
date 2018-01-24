@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
-import './../include/bootstrap';
 
 
 export default class Navbar extends Component {
@@ -41,7 +40,7 @@ export default class Navbar extends Component {
                                 )
                             })
                         }
-                        <li className="nav-item "><a className="nav-link" href="./files/resume.pdf" target="_blank">Resume <span className="sr-only">(current)</span></a></li>
+                        <li className="nav-item "><a className="nav-link" href="./files/resume.pdf" target="_blank"> Resume <span className="sr-only">(current)</span></a></li>
                     </ul>
                 </div>
             </nav>
