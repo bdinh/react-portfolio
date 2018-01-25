@@ -33,7 +33,7 @@ export default class Footer extends Component {
                             )
                         })
                     }
-                    <p dangerouslySetInnerHTML={{
+                    <p className="footer-text" dangerouslySetInnerHTML={{
                         __html: copyrightText
                     }}/>
                 </div>

@@ -22,6 +22,10 @@
     color: #c0dfd9;
 }
 
+.footer-text {
+    font-size: 0.75em;
+}
+
 
 @media (min-width: 598px) {
     .social-link a {

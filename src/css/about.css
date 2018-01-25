@@ -26,6 +26,18 @@
     justify-items: center;
 }
 
+.profile-text  {
+    text-align: left;
+}
+
+.emphasize-link {
+    color: #99a4ae;
+}
+
+.italicize {
+    font-style: italic;
+}
+
 @media (min-width: 598px) {
     .about-icon {
         width: 75%;

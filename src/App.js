@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import AboutView from './views/AboutView';
 import WorkView from './views/WorkView';
+import PhotoView from './views/PhotoView';
 import { Switch, Route } from 'react-router-dom'
 import './include/bootstrap';
 
@@ -47,7 +48,7 @@ class App extends Component {
                                         link: "https://www.linkedin.com/in/baohdinh/",
                                     }
                                 ],
-                                copyrightText: "Made with <span class='heart'> &hearts; </span> by Bao"
+                                copyrightText: "Made with <span class='heart'> &hearts; </span> in Seattle <br/> &copy; 2018 &middot; Bao Dinh "
                             }}
                         />
                     )
@@ -87,6 +88,7 @@ class App extends Component {
                                         link: "https://www.linkedin.com/in/baohdinh/",
                                     }
                                 ],
+                                copyrightText: "Made with <span class='heart'> &hearts; </span> in Seattle &middot; Bao Dinh &middot; 2018"
                             }}
                         />
                         )
@@ -110,16 +112,18 @@ class App extends Component {
                             about={{
                                 profileImage: "./images/profile-picture.JPG",
                                 aboutHeader: "Bao Dinh",
-                                aboutText: "My name is Bao and I am currently a Junior\n" +
-                                "                                at the University of Washington studying Informatics with an emphasis on Data\n" +
-                                "                                Science. I love developing tools for the web, especially those that have to do\n" +
-                                "                                with Data Visualization. Long term, I hope to continue to work on tools that help ease the\n" +
-                                "                                process of developing visual content (Coming for you Bostock). Every data set has a story\n" +
-                                "                                and I think that stories are best told through engaging visuals. I also hope to be able\n" +
-                                "                                to take my skills to the population health domain to work with health data sets to design\n" +
-                                "                                and engineer solutions to help forward population health. As a hobby, I enjoy\n" +
-                                "                                photography, as the idea of being able to slow down time and capture experiences\n" +
-                                "                                has always fascinated me.",
+                                aboutText: ["Hi there! I'm Bao, a Junior\n" +
+                                "at the University of Washington in Seattle, studying Informatics. " +
+                                "I enjoy developing tools for the web, especially those that have to do\n" +
+                                "with visualizations. Long term, I hope to work on tools that help ease the\n" +
+                                "process of developing visual content.",
+                                "While I'm not working, you can find me trying out new cooking recipes, reading " +
+                                "or wandering the streets of Seattle taking <a class='emphasize-link' href='/photographs'>photos.</a>" +
+                                " I'm currently rereading <span class='italicize'>Island</span> by Aldous Huxley. I recently finished " +
+                                "<span class='italicize'>When Breath Becomes Air</span> by Paul Kalanithi. If you've been looking " +
+                                "for a book to read, I highly recommend Kalanithi's memoir.",
+                                "Feel free to reach out and get in touch - <a class='emphasize-link' href='mailto:baodinh96@gmail.com?Subject=Hi%20Bao!'>baodinh96@gmail.com</a>"
+                                ],
                                 iconSet: [
                                     {
                                         name: "Computer Code",
@@ -236,10 +240,69 @@ class App extends Component {
                                         link: "https://www.linkedin.com/in/baohdinh/",
                                     }
                                 ],
+                                copyrightText: "Made with <span class='heart'> &hearts; </span> in Seattle &middot; Bao Dinh &middot; 2018"
+
                             }}
                         />
                     )
                     }/>
+                    <Route
+                        path="/photographs" render={(routerProps) => (
+                            <PhotoView
+                                pictureArray={[
+                                    {
+                                        name: "Buildings in Seattle from the pier",
+                                        source: "./images/seattle-pier.jpg"
+                                    },
+                                    {
+                                        name: "Seagull on a table",
+                                        source: "./images/seagull-table.jpg"
+                                    },
+                                    {
+                                        name: "Men sitting on a bench",
+                                        source: "./images/bench-shot.jpg"
+                                    },
+                                    {
+                                        name: "Man dressed up as Spiderman",
+                                        source: "./images/spiderman.jpg"
+                                    },
+                                    {
+                                        name: "Man playing the piano",
+                                        source: "./images/piano-performer.jpg"
+                                    },
+                                    {
+                                        name: "Man playing grand finale of song on piano",
+                                        source: "./images/grand-finale.jpg"
+                                    },
+                                    {
+                                        name: "Pike Place Market",
+                                        source: "./images/pike-place.jpg"
+                                    },
+                                    {
+                                        name: "Seattle Ferris Wheel",
+                                        source: "./images/ferris-wheel.jpg"
+                                    },
+                                    {
+                                        name: "Drummers Marching in Seattle",
+                                        source: "./images/nordstrom-drummers.jpg"
+                                    },
+                                    {
+                                        name: "People marching in Pride Parade",
+                                        source: "./images/planned-parenthood.jpg"
+                                    },
+                                    {
+                                        name: "Whole Food's food truck for Pride Parade",
+                                        source: "./images/whole-foods.jpg"
+                                    },
+                                    {
+                                        name: "Man cutting a fruit",
+                                        source: "./images/sam-cutting-fruits.jpg"
+                                    }
+                                ]}
+
+                            />
+                    )}
+                    />
                 </Switch>
             </div>
         );

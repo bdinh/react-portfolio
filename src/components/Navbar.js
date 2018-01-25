@@ -27,7 +27,7 @@ export default class Navbar extends Component {
                     <span className="navbar-toggler-icon"/>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ml-auto">
+                    <ul className="navbar-nav ml-auto navbar-collapse-text">
                         <li className="nav-item "><NavLink className="nav-link" to={navbarLinks[0].link}>{navbarLinks[0].name} <span className="sr-only">(current)</span></NavLink></li>
                         {
                             navbarLinks.splice(1, navbarLinks.length - 1).map((link, i) => {

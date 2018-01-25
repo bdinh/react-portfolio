@@ -48,6 +48,7 @@ class ProfileText extends Component {
         super(props)
     }
 
+
     render() {
 
         const {
@@ -55,11 +56,17 @@ class ProfileText extends Component {
             aboutText,
         } = this.props;
 
+        console.log(aboutText);
+
         return (
             <div className="col-md-6 col-lg-8 profile-content">
-                <h2>{aboutHeader}</h2>
                 <div className="profile-text">
-                    <p>{aboutText}</p>
+                    <h2>{aboutHeader}</h2>
+                    {
+                        aboutText.map((sentence, i) => (
+                            <p key={i} dangerouslySetInnerHTML={{__html: sentence}}/>
+                        ))
+                    }
                 </div>
             </div>
         )

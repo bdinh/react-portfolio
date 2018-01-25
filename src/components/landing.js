@@ -17,8 +17,8 @@ export default class Landing extends Component {
         return (
             <div className="landing-strip">
                 <p className="landing-header">{headerText}</p>
-                <p className="landing-subheader">
-                    {subheaderText}
+                <p className="landing-subheader"
+                   dangerouslySetInnerHTML={{__html: subheaderText}}>
                 </p>
                 <div className="page-scroll">
                     {

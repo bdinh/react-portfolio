@@ -84,7 +84,6 @@ export default class AboutView extends Component {
                     (
                         <Footer
                             socialAccounts={footer.socialAccounts}
-z
                         />
                     )
                     :

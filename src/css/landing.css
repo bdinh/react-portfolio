@@ -21,6 +21,9 @@
     text-align: center;
 }
 
+.landing-subheader {
+    width: 70%;
+}
 
 @media (min-width: 598px) {
     .landing-header {
@@ -31,6 +34,17 @@
 
 
 @media (min-width: 768px) {
+
+
+
+}
+
+@media (min-width: 992px) {
+
+
+}
+
+@media (min-width: 1200px) {
     .landing-header {
         font-size: 3em;
     }
@@ -38,15 +52,5 @@
     .landing-subheader {
         font-size: 1.25em;
     }
-
-
-}
-
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 1200px) {
-
 }
 

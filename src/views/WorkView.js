@@ -12,6 +12,7 @@ export default class WorkView extends Component {
 
         const {
             navbar,
+            footer,
         } = this.props;
 
         return (
@@ -31,12 +32,14 @@ export default class WorkView extends Component {
                 }
                 <Landing
                         headerText="Software Developer"
-                        subheaderText={"Whether it's in my code or my photos, attention to detail is what I always strive for"}
+                        subheaderText={"I'm a student at the University of Washington studying" +
+                        "<a class='remove-link-css' href='https://ischool.uw.edu/programs/informatics'> Informatics</a>. " +
+                        "Currently I'm a teaching assistant for the <a class='remove-link-css' href='https://ischool.uw.edu'>Information School</a>. " +
+                        "Previously interned at the <a class='remove-link-css' href='http://www.healthdata.org/'> Institute for Health Metrics and Evaluation</a>."}
                 />
                 <div className="experience-section">
                     <div className="container">
-                    <div className="navbar-spacing">
-                    </div>
+                    <div className="navbar-spacing"/>
                     <div className="experience-header">
                         <h2>Experience</h2>
                     </div>
