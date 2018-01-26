@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/footer';
 import Landing from '../components/landing';
+import '../css/experience.css';
 
 // TODO: Refactor Code and add prop constraints
 
@@ -39,7 +40,6 @@ export default class WorkView extends Component {
                 />
                 <div className="experience-section">
                     <div className="container">
-                    <div className="navbar-spacing"/>
                     <div className="experience-header">
                         <h2>Experience</h2>
                     </div>

@@ -1,0 +1,219 @@
+.card {
+    border: none!important;
+    margin: 1em auto!important;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em!important;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 1rem rgba(32,41,51,.1);
+}
+
+
+.experience-section {
+    background-color: #EDEEF0!important;
+}
+
+.content {
+    position: relative;
+    /*width: 90%;*/
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.content .content-overlay {
+    background: rgba(52,73,94,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details, .content:hover .experience-content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    padding-top: 1em;
+}
+
+
+.content-details, .experience-content-details {
+    color: #fff;
+    font-size: 1em;
+}
+
+.content-title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.content-text {
+    text-align: left;
+}
+
+.content-text {
+    margin-top: 1em;
+}
+
+.fadeIn-bottom{
+    top: 80%;
+}
+
+.fadeIn-top{
+    top: 20%;
+}
+
+.fadeIn-left{
+    left: 20%;
+}
+
+.fadeIn-right{
+    left: 80%;
+}
+
+.experience-content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.experience-content-details {
+    font-size: 1.25em;
+}
+
+.experience-content-title {
+    font-size: 1.5em;
+}
+
+.experience-content-text p {
+    font-style: italic;
+}
+
+
+@media (min-width: 768px) {
+    .content-details {
+        font-size: 0.75em;
+    }
+
+    .experience-content-title {
+        font-size: 1.5em;
+    }
+
+    .content-date {
+        font-size: 1em;
+    }
+
+    .content-title {
+        font-size: 1.25em;
+    }
+
+    .content:hover .content-details{
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        padding-top: 1em;
+    }
+
+    .experience-content-details {
+        font-size: 0.75em;
+    }
+
+    .content:hover .experience-content-details{
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        padding-top: 1em;
+    }
+
+    .content-text {
+        font-size: 0.75em;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+    .content-details {
+        font-size: 1em;
+    }
+
+    .content-date {
+        font-size: 1em;
+    }
+
+    .content-title {
+        font-size: 1.25em;
+    }
+
+    .content:hover .content-details{
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        padding-top: 1em;
+    }
+
+    .experience-content-details {
+        font-size: 1em;
+    }
+
+    .content:hover .experience-content-details{
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        padding-top: 1em;
+    }
+
+    .content-text {
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .experience-content-details {
+        font-size: 1.25em;
+    }
+}

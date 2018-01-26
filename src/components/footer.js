@@ -19,7 +19,7 @@ export default class Footer extends Component {
         return (
             <footer>
             <div className="container">
-                <div className="footer-contact">
+                <div className="footer-contact row">
                     {
                         socialAccounts.map((account, i) => {
                             return (
@@ -33,10 +33,10 @@ export default class Footer extends Component {
                             )
                         })
                     }
-                    <p className="footer-text" dangerouslySetInnerHTML={{
-                        __html: copyrightText
-                    }}/>
                 </div>
+                <p className="footer-text" dangerouslySetInnerHTML={{
+                    __html: copyrightText
+                }}/>
             </div>
             </footer>
         );

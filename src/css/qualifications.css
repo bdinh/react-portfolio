@@ -46,6 +46,10 @@
     padding: 1em;
 }
 
+.experience-container {
+    margin: 0!important;
+}
+
 
 @media (min-width: 768px) {
     .full-bar {

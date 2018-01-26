@@ -20,25 +20,25 @@ export default class Landing extends Component {
                 <p className="landing-subheader"
                    dangerouslySetInnerHTML={{__html: subheaderText}}>
                 </p>
-                <div className="page-scroll">
                     {
                         pageScroll ?
                             (
-                                <NavLink
-                                    className="page-scroll-text"
-                                    to={pageScrollLink}
-                                >
-                                    {pageScrollText}
-                                    <br/>
-                                    <FontAwesome
-                                        name="chevron-down"
-                                    />
-                                </NavLink>
+                                <div className="page-scroll">
+                                    <NavLink
+                                        className="page-scroll-text"
+                                        to={pageScrollLink}
+                                    >
+                                        {pageScrollText}
+                                        <br/>
+                                        <FontAwesome
+                                            name="chevron-down"
+                                        />
+                                    </NavLink>
+                                </div>
                             )
                             :
                             ""
                     }
-                </div>
             </div>
         )
     }
