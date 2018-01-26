@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://bdinh.github.io/react-portfolio/",
+  "homepage": ".",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "^4.7.0",
