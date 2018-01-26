@@ -56,8 +56,6 @@ class ProfileText extends Component {
             aboutText,
         } = this.props;
 
-        console.log(aboutText);
-
         return (
             <div className="col-md-6 col-lg-8 profile-content">
                 <div className="profile-text">

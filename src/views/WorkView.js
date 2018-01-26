@@ -54,7 +54,7 @@ export default class WorkView extends Component {
                             }}
                             bullet={[
                                 "Designed and implemented reusable React components used for the refactoring of visualization codebase.",
-                                "Worked in a Scrum framework in order to complete objectives to carryout deliverables."
+                                "Worked in a Scrum framework in order to complete objectives to carryout sprint deliverables."
                             ]}
                         />
                         <Experience
@@ -68,7 +68,7 @@ export default class WorkView extends Component {
                             bullet={[
                                 "Teach undergraduate students technologies\n" +
                                 "(R, CLI, Git, APIs) that serves as a technical\n" +
-                                "oundation for them to build upon as they continue to\n" +
+                                "foundation for them to build upon as they continue to\n" +
                                 "develop more technical skills.",
                                 "Responsibilities include, writing programming exercises,\n" +
                                 "creating lab presentations, and performing programming demos."
