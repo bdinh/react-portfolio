@@ -21,13 +21,14 @@
     text-align: center;
 }
 
-.landing-subheader {
-    width: 70%;
-}
 
 @media (min-width: 598px) {
     .landing-header {
         font-size: 2.5em;
+    }
+
+    .landing-subheader {
+        width: 70%;
     }
 
 }

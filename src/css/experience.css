@@ -71,7 +71,7 @@
 
 .content-details, .experience-content-details {
     color: #fff;
-    font-size: 1em;
+    font-size: 0.75em;
 }
 
 .content-title {
@@ -131,6 +131,12 @@
 
 .experience-content-text p {
     font-style: italic;
+}
+
+@media (min-width: 598px) {
+    .content-details, .experience-content-details {
+        font-size: 1em;
+    }
 }
 
 
