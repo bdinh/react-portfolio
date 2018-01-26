@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../css/about.css';
 
 export default class About extends Component {
@@ -53,18 +54,34 @@ class ProfileText extends Component {
 
         const {
             aboutHeader,
-            aboutText,
+            // aboutText,
         } = this.props;
 
         return (
             <div className="col-md-6 col-lg-8 profile-content">
                 <div className="profile-text">
                     <h2>{aboutHeader}</h2>
-                    {
-                        aboutText.map((sentence, i) => (
-                            <p key={i} dangerouslySetInnerHTML={{__html: sentence}}/>
-                        ))
-                    }
+                    {/*{*/}
+                        {/*aboutText.map((sentence, i) => (*/}
+                            {/*<p key={i} dangerouslySetInnerHTML={{__html: sentence}}/>*/}
+                        {/*))*/}
+                    {/*}*/}
+                    <p>Hi there! I'm Bao, a Junior
+                        at the University of Washington in Seattle, studying Informatics.
+                        I enjoy developing tools for the web, especially those that have to do
+                        with visualizations. Long term, I hope to work on tools that help ease the
+                        process of developing visual content.
+                    </p>
+                    <p>
+                        While I'm not working, you can find me trying out new cooking recipes, reading
+                        or wandering the streets of Seattle taking <NavLink className='emphasize-link' to='/photographs'>photos. </NavLink>
+                        I'm currently rereading <span className='italicize'>Island</span> by Aldous Huxley. I recently finished
+                        <span className='italicize'>When Breath Becomes Air</span> by Paul Kalanithi. If you've been looking
+                        for a book to read, I highly recommend Kalanithi's memoir.
+                    </p>
+                    <p>
+                        Feel free to reach out and get in touch - <a className='emphasize-link' href='mailto:baodinh96@gmail.com?Subject=Hi%20Bao!'>baodinh96@gmail.com</a>
+                    </p>
                 </div>
             </div>
         )

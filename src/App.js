@@ -3,7 +3,7 @@ import './App.css';
 import AboutView from './views/AboutView';
 import WorkView from './views/WorkView';
 import PhotoView from './views/PhotoView';
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
 import './include/bootstrap';
 
 
@@ -88,7 +88,7 @@ class App extends Component {
                                         link: "https://www.linkedin.com/in/baohdinh/",
                                     }
                                 ],
-                                copyrightText: "Made with <span class='heart'> &hearts; </span> in Seattle &middot; Bao Dinh &middot; 2018"
+                                copyrightText: "Made with <span class='heart'> &hearts; </span> in Seattle <br/> &copy; 2018 &middot; Bao Dinh "
                             }}
                         />
                         )
@@ -240,8 +240,7 @@ class App extends Component {
                                         link: "https://www.linkedin.com/in/baohdinh/",
                                     }
                                 ],
-                                copyrightText: "Made with <span class='heart'> &hearts; </span> in Seattle &middot; Bao Dinh &middot; 2018"
-
+                                copyrightText: "Made with <span class='heart'> &hearts; </span> in Seattle <br/> &copy; 2018 &middot; Bao Dinh "
                             }}
                         />
                     )

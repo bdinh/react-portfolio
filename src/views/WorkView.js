@@ -137,7 +137,6 @@ export default class WorkView extends Component {
                 <Footer
                     socialAccounts={footer.socialAccounts}
                     copyrightText={footer.copyrightText}
-
                 />
                 </div>
             </div>
