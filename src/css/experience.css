@@ -8,6 +8,9 @@
     box-shadow: 0 0.25rem 1rem rgba(32,41,51,.1);
 }
 
+.unfinished {
+    font-style: normal!important;
+}
 
 .experience-section {
     background-color: #EDEEF0!important;
@@ -135,34 +138,50 @@
 
 @media (min-width: 598px) {
     .content-details, .experience-content-details {
-        font-size: 1em;
+        font-size: 0.75em;
     }
 }
 
 
 @media (min-width: 768px) {
     .content-details {
-        font-size: 0.75em;
+        font-size: 0.5em;
     }
 
-    .experience-content-title {
-        font-size: 1.5em;
+    .experience-section-container {
+        max-width: 900px!important;
     }
+
+    .content-text > ul {
+        padding-left: 1em;
+    }
+    /*.experience-content-title {*/
+        /*font-size: 1.25em;*/
+    /*}*/
 
     .content-date {
         font-size: 1em;
     }
 
     .content-title {
-        font-size: 1.25em;
+        font-size: 1.5em;
+    }
+
+    .content-date, .content-title {
+        margin-bottom: 0.5em!important;
     }
 
     .content:hover .content-details{
-        top: 50%;
+        top: 55%;
         left: 50%;
         opacity: 1;
         padding-top: 1em;
     }
+
+    /*.remove-link-css {*/
+        /*font-size: 1.25em;*/
+    /*}*/
+
 
     .experience-content-details {
         font-size: 0.75em;
@@ -176,23 +195,32 @@
     }
 
     .content-text {
-        font-size: 0.75em;
+        font-size: 0.5em;
     }
+
 
 }
 
 
 @media (min-width: 992px) {
     .content-details {
-        font-size: 1em;
+        font-size: 0.5em;
+    }
+
+    .content-text > ul {
+        padding-left: 2em;
+    }
+
+    .content-date, .content-title {
+        margin-bottom: 1em!important;
     }
 
     .content-date {
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     .content-title {
-        font-size: 1.25em;
+        font-size: 1.5em;
     }
 
     .content:hover .content-details{
@@ -219,7 +247,19 @@
 }
 
 @media (min-width: 1200px) {
+    .content-details {
+        font-size: 1em;
+    }
+
+    .content-text > ul {
+        padding-left: 2em;
+    }
+
     .experience-content-details {
-        font-size: 1.25em;
+        font-size: 1em;
+    }
+
+    .experience-section-container {
+        max-width: 1200px!important;
     }
 }

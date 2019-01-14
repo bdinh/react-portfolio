@@ -6,7 +6,6 @@ import Landing from '../components/landing';
 import '../css/experience.css';
 
 // TODO: Refactor Code and add prop constraints
-
 export default class WorkView extends Component {
 
     render() {
@@ -32,7 +31,7 @@ export default class WorkView extends Component {
                         )
                 }
                 <Landing
-                        headerText="Software Developer"
+                        headerText="Software Engineer"
                         subheaderText={"I'm a student at the University of Washington studying" +
                         "<a class='remove-link-css' href='https://ischool.uw.edu/programs/informatics'> Informatics</a>. " +
                         "Currently I'm a teaching assistant for the <a class='remove-link-css' href='https://ischool.uw.edu'>Information School</a>. " +
@@ -43,40 +42,57 @@ export default class WorkView extends Component {
                     <div className="experience-header">
                         <h2>Experience</h2>
                     </div>
-                    <div className="experience-container row">
-                        <Experience
-                            title="SDE Intern"
-                            date="June - August 2017"
-                            organization={{
-                                name: "Institute for Health Metrics and Evaluation",
-                                link: "http://www.healthdata.org/",
-                                source: "./images/ihme.png"
-                            }}
-                            bullet={[
-                                "Designed and implemented reusable React components used for the refactoring of visualization codebase.",
-                                "Worked in a Scrum framework in order to complete objectives to carryout sprint deliverables."
-                            ]}
-                        />
-                        <Experience
-                            title="Teaching Assistant"
-                            date="March 2017 - Present"
-                            organization={{
-                                name: "University of Washington Information School",
-                                link: "https://ischool.uw.edu/",
-                                source: "./images/ischool-linear-gradient.png"
-                            }}
-                            bullet={[
-                                "Teach undergraduate students technologies\n" +
-                                "(R, CLI, Git, APIs) that serves as a technical\n" +
-                                "foundation for them to build upon as they continue to\n" +
-                                "develop more technical skills.",
-                                "Responsibilities include, writing programming exercises,\n" +
-                                "creating lab presentations, and performing programming demos."
-                            ]}
-                        />
                     </div>
-                    <div className="navbar-spacing"/>
-                </div>
+                    <div className={"container experience-section-container"}>
+                        <div className="experience-container row">
+                            <Experience
+                                title="Teaching Assistant"
+                                date="Sept. 2018 - Present"
+                                organization={{
+                                    name: "University of Washington Information School - INFO 441",
+                                    link: "https://github.com/info441",
+                                    source: "./images/ischool-linear-gradient.png"
+                                }}
+                                bullet={[
+                                    "Responsible for teaching students about server-side development by means of building a sophisticated full-stack web application. Concepts covered include communication protocols, REST, containerization, in-memory data stores, Microservices and asynchronous messaging.",
+                                ]}
+                                technologies={"Golang, Node.js, Python, Docker, EC2, Redis, RabbitMQ, Websockets, MySQL, MongoDB"}
+                            />
+                            <Experience
+                                title="SDE Intern"
+                                date="June - Aug. 2017"
+                                organization={{
+                                    name: "Institute for Health Metrics and Evaluation",
+                                    link: "http://www.healthdata.org/",
+                                    source: "./images/ihme.png"
+                                }}
+                                bullet={[
+                                    "Implemented reusable React UI components for internal visualization library used to refactor the existing codebase as well as standardize future visualization development.",
+                                    "Utilized implemented components to refactor an existing visualization in production in order to create documentation for future development."
+                                ]}
+                                technologies={"React, D3, Chai, Enzyme, Git Version Control"}
+                            />
+                            <Experience
+                                title="Teaching Assistant"
+                                date="March 2017 - June 2018"
+                                organization={{
+                                    name: "University of Washington Information School - INFO 201",
+                                    link: "https://github.com/info201a-au17",
+                                    source: "./images/ischool-linear-gradient.png"
+                                }}
+                                bullet={[
+                                    "Teach undergraduate students technologies\n" +
+                                    "(R, CLI, Git, APIs) that serves as a technical\n" +
+                                    "foundation for them to build upon as they continue to\n" +
+                                    "develop more technical skills.",
+                                    "Responsibilities include, writing programming exercises,\n" +
+                                    "creating lab presentations, and performing programming demos."
+                                ]}
+                                technologies={"R, CLI, Git, APIs, Shiny"}
+                            />
+                        </div>
+                        <div className="navbar-spacing"/>
+                    </div>
                 </div>
 
                 <div className="project-section container">
@@ -84,6 +100,25 @@ export default class WorkView extends Component {
                         <h2>Projects</h2>
                     </div>
                     <div className="experience-container row">
+                        <Project
+                            title="Shift 2 Go (Capstone)"
+                            description="Platform that facilitates the marketplace for businesses to connect with on-demand service workers."
+                            image="./images/waba.png"
+                            // sourceCode="https://github.com/bdinh/ecosnap"
+                            unfinished="Software is proprietary. Feel free to reach out to me if you're interested in what my team and I are building. We'd love to discuss it with you."
+                        />
+                        <Project
+                            title="EcoSnap"
+                            description="Environmentally conscious Android application that utilizes Deep Learning to classify whether an object is recyclable or non-recyclable."
+                            image="./images/ecosnap.png"
+                            sourceCode="https://github.com/bdinh/ecosnap"
+                        />
+                        <Project
+                            title="Visualize Your History"
+                            description="Chrome extension written in Typescript with TSX that visualizes the user's browsing history."
+                            image="./images/history-visualizer.png"
+                            sourceCode="https://github.com/bdinh/visualize-history-extension"
+                        />
                         <Project
                             title="react-build-portfolio"
                             description="Stateless React Components library for building portfolios."
@@ -157,10 +192,11 @@ class Experience extends Component {
             date,
             organization,
             bullet,
+            technologies
         } = this.props;
 
         return (
-            <div className="col-md-6 experience-item">
+            <div className="col-md-4 experience-item">
                 <div className="card content">
                     <div className="content-overlay"/>
                     <img className="card-img-top content-image" src={organization.source} alt="Card image cap"/>
@@ -183,6 +219,9 @@ class Experience extends Component {
                                     ))
                                 }
                             </ul>
+                            <div className={"technologies-leveraged-container"}>
+                                <p>{"Technologies Leveraged: " + technologies}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,13 +252,16 @@ class Project extends Component {
                         <p className="experience-content-title">{title}</p>
                         <div className="content-text experience-content-text">
                             <p>{description}</p>
-                            <a className="remove-link-css"
-                               href={sourceCode}>Source Code</a>
+                            {
+                                sourceCode ? <a className="remove-link-css"
+                                                href={sourceCode}>Source Code</a> : ""
+                            }
+
                             <br/>
                             {
                                 unfinished ?
                                     (
-                                        <p>*Work currently in progress</p>
+                                        <p className={"unfinished"}>{unfinished}</p>
                                     )
                                 :
                                     (

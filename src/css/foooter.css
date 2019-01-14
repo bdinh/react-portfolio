@@ -35,8 +35,8 @@ p.footer-text{
 
 @media (min-width: 598px) {
     .social-link a {
-        font-size: 1.5em;
-        margin-top: 0.1em;
+        font-size: 1.25em;
+        margin-top: 0.25em;
     }
 
     .social-link {

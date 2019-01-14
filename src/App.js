@@ -112,17 +112,19 @@ class App extends Component {
                             about={{
                                 profileImage: "./images/profile-picture.JPG",
                                 aboutHeader: "Bao Dinh",
-                                aboutText: ["Hi there! I'm Bao, a Junior\n" +
-                                "at the University of Washington in Seattle, studying Informatics. " +
-                                "I enjoy developing tools for the web, especially those that have to do\n" +
-                                "with visualizations. Long term, I hope to work on tools that help ease the\n" +
-                                "process of developing visual content.",
+                                aboutText: ["Hi there! I'm Bao, a Senior at the University of Washington in Seattle," +
+                                " studying Informatics. My primary interests lie in full-stack development, distributed " +
+                                "systems, site reliability, scalability and maintainability. I enjoy building exhaustive " +
+                                "applications with my friends. Currently, we’re working on a platform that facilitates " +
+                                "the marketplace for businesses to connect with on-demand service workers. Long term, " +
+                                "I hope to be an Engineering Manager, but currently I am seeking a full time as a Software Engineer " +
+                                "after June 2019.",
                                 "While I'm not working, you can find me trying out new cooking recipes, reading " +
                                 "or wandering the streets of Seattle taking <a class='emphasize-link' href='/photographs'>photos.</a>" +
-                                " I'm currently rereading <span class='italicize'>Island</span> by Aldous Huxley. I recently finished " +
+                                " I'm currently reading <span class='italicize'>Thinking, Fast and Slow</span> by Daniel Kahnerman. I recently finished " +
                                 "<span class='italicize'>When Breath Becomes Air</span> by Paul Kalanithi. If you've been looking " +
                                 "for a book to read, I highly recommend Kalanithi's memoir.",
-                                "Feel free to reach out and get in touch - <a class='emphasize-link' href='mailto:baodinh96@gmail.com?Subject=Hi%20Bao!'>baodinh96@gmail.com</a>"
+                                "Feel free to reach out and get in touch - <a class='emphasize-link' href='mailto:bdinh@uw.edu?Subject=Hi%20Bao!'>bdinh@uw.edu</a>"
                                 ],
                                 iconSet: [
                                     {
@@ -155,43 +157,43 @@ class App extends Component {
                                 skillSubheader: "Development",
                                 skillSet: [
                                     {
+                                        name: "Go",
+                                        proficiency: "85%"
+                                    },
+                                    {
                                         name: "Java",
-                                        proficiency: "80%"
+                                        proficiency: "75%"
                                     },
                                     {
                                         name: "Python",
-                                        proficiency: "75%"
-                                    },
-                                    {
-                                        name: "R",
                                         proficiency: "85%"
                                     },
                                     {
-                                        name: "JavaScript",
+                                        name: "TypeScript",
                                         proficiency: "85%"
                                     },
                                     {
-                                        name: "ReactJS",
+                                        name: "React",
                                         proficiency: "88%"
                                     },
                                     {
-                                        name: "D3",
+                                        name: "Node.js",
                                         proficiency: "80%"
                                     },
                                     {
-                                        name: "Git Version Control",
+                                        name: "Version Control (Git)",
                                         proficiency: "90%"
                                     },
                                     {
-                                        name: "Node.js",
+                                        name: "Docker",
                                         proficiency: "75%"
                                     },
                                     {
-                                        name: "PHP",
+                                        name: "AWS",
                                         proficiency: "75%"
                                     },
                                     {
-                                        name: "Shell Scripting",
+                                        name: "MySQL",
                                         proficiency: "80%"
                                     }],
                                 courses: [
@@ -208,12 +210,20 @@ class App extends Component {
                                         link: "https://www.washington.edu/students/crscat/cse.html#cse415"
                                     },
                                     {
-                                        name: "INFO 340: Introduction to Relational Database Management Systems",
+                                        name: "INFO 314: Computer Networks and Distributed Applications",
+                                        link: "https://www.washington.edu/students/crscat/info.html#info314"
+                                    },
+                                    {
+                                        name: "INFO 330: Introduction to Relational Database Management Systems",
+                                        link: "https://www.washington.edu/students/crscat/info.html#info330"
+                                    },
+                                    {
+                                        name: "INFO 340: Client-Side Web Development",
                                         link: "https://www.washington.edu/students/crscat/info.html#info340"
                                     },
                                     {
-                                        name: "INFO 343: Client-Side Web Development",
-                                        link: "https://www.washington.edu/students/crscat/info.html#info343"
+                                        name: "INFO 441: Server-Side Development",
+                                        link: "https://www.washington.edu/students/crscat/info.html#info441"
                                     },
                                     {
                                         name: "INFO 498 B: Software Architecture: Analysis and Applications",
@@ -228,8 +238,8 @@ class App extends Component {
                                         link: "https://www.facebook.com/baodinh96",
                                     },
                                     {
-                                        name: "instagram",
-                                        link: "https://www.instagram.com/baohdinh/",
+                                        name: "google-plus",
+                                        link: "https://plus.google.com/u/1/111520571292092801206",
                                     },
                                     {
                                         name: "github",

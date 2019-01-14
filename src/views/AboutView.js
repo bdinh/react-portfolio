@@ -41,7 +41,6 @@ export default class AboutView extends Component {
                         <Landing
                             headerText={landing.headerText}
                             subheaderText={landing.subheaderText}
-
                         />
                     )
                     :
